@@ -1,0 +1,33 @@
+[
+  {
+    "description": "模拟一个没有参数的post请求",
+    "request": {
+      "uri": "/postDemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "这是一个没有参数的Post请求"
+    }
+  },{
+  "description": "模拟一个带参数的post请求",
+  "request": {
+    "uri": "/post/with/cookies",
+    "method": "post",
+    "cookies": {
+      "login": "true"
+    },
+    "json": {
+      "name": "dingding",
+      "age": "18"
+    }
+  },
+  "response": {
+    "status": 200,
+    "json": {
+      "name": "钉钉",
+      "id": 9527,
+      "status": 1
+    }
+  }
+}
+]
